@@ -13,7 +13,7 @@ const Header = () => {
             <p className="text-gray-400 text-base py-4">We are a family owned Mediterranean restaurant, focused on traditional recipes served with a modern twist.</p>
             <Button label="Click Me" />
           </div>
-          <img src={img1} alt="Header Image" className="w-full h-auto max-w-72 max-h-52 rounded-md object-cover" />
+          <img src={img1} alt="Description of the image" className="w-full h-auto max-w-72 max-h-52 rounded-md object-cover" />
         </div>
       </div>
     </header>
