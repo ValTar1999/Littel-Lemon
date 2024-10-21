@@ -28,9 +28,9 @@ const NavMenu = () => {
           )}
         </button>
         <ul 
-          role="menu" // Added for semantics
-          className={`absolute left-0 top-24 w-full bg-gray-800 text-white mt-2 rounded shadow-md ${isOpen ? 'block' : 'hidden'} md:inline-flex md:static md:justify-end space-x-4 md:bg-transparent md:shadow-none`} 
-        > {/* Dropdown menu */}
+          role="menu"
+          className={`absolute left-0 top-24 w-full bg-gray-800 text-white mt-2 rounded shadow-md ${isOpen ? 'block' : 'hidden'} md:inline-flex md:static md:justify-end md:space-x-4 md:bg-transparent md:shadow-none`} 
+        >
           <li role="none"><a href="/" role="menuitem" onClick={(e) => { e.preventDefault(); handleScroll('home'); }}>Home</a></li> {/* Updated for smooth scroll */}
           <li role="none"><a href="#about" role="menuitem" onClick={(e) => { e.preventDefault(); handleScroll('about'); }}>About</a></li> {/* Updated for smooth scroll */}
           <li role="none"><a href="#menu" role="menuitem" onClick={(e) => { e.preventDefault(); handleScroll('menu'); }}>Menu</a></li> {/* Updated for smooth scroll */}
