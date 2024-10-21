@@ -4,9 +4,10 @@ import Home from './page/Home';
 import ReservationForm from './page/ReservationForm';
 
 
+
 function App() {
   return (
-    <Router basename="/littel-lemon">
+    <Router>
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/reservation-form" element={<ReservationForm />} />
@@ -16,4 +17,3 @@ function App() {
 }
 
 export default App;
-
