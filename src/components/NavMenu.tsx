@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-
+import { Link } from 'react-router-dom'; // Import Link from react-router-dom
 import Logo from '../asets/logo.e68246686f716ff6e5d8.png';
 
 const NavMenu = () => {
@@ -31,10 +31,10 @@ const NavMenu = () => {
           role="menu"
           className={`absolute left-0 top-24 w-full bg-gray-800 text-white mt-2 rounded shadow-md ${isOpen ? 'block' : 'hidden'} md:inline-flex md:static md:justify-end md:space-x-4 md:bg-transparent md:shadow-none`} 
         >
-          <li role="none"><a href="/" role="menuitem" onClick={(e) => { e.preventDefault(); handleScroll('home'); }}>Home</a></li> {/* Updated for smooth scroll */}
-          <li role="none"><a href="#about" role="menuitem" onClick={(e) => { e.preventDefault(); handleScroll('about'); }}>About</a></li> {/* Updated for smooth scroll */}
-          <li role="none"><a href="#menu" role="menuitem" onClick={(e) => { e.preventDefault(); handleScroll('menu'); }}>Menu</a></li> {/* Updated for smooth scroll */}
-          <li role="none"><a href="/reservation-form" role="menuitem">Reservations</a></li> {/* Updated for semantics */}
+          <li role="none"><Link to="/" role="menuitem" onClick={(e) => { e.preventDefault(); handleScroll('home'); }}>Home</Link></li> {/* Updated to Link for routing */} 
+          <li role="none"><Link to="#about" role="menuitem" onClick={(e) => { e.preventDefault(); handleScroll('about'); }}>About</Link></li> {/* Updated to Link for routing */} 
+          <li role="none"><Link to="#menu" role="menuitem" onClick={(e) => { e.preventDefault(); handleScroll('menu'); }}>Menu</Link></li> {/* Updated to Link for routing */} 
+          <li role="none"><Link to="/reservation-form" role="menuitem">Reservations</Link></li> {/* Updated to Link for routing */} 
         </ul>
       </div>
     </nav>
