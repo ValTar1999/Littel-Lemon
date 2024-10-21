@@ -7,7 +7,7 @@ import ReservationForm from './page/ReservationForm';
 
 function App() {
   return (
-    <Router basename="/">
+    <Router>
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/reservation-form" element={<ReservationForm />} />
